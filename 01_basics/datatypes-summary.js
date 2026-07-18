@@ -53,3 +53,35 @@ const myFunc = function(){
 console.log(typeof heros);
 console.log(typeof myObj);
 console.log(typeof myFunc);
+
+/*********************Memory Types in JavaScript************************************/
+
+/*
+1. Stack Memory => used to store primitive data types and function references. 
+When we use primitive data types, we get the copy of the value stored in the declared variable.
+*/
+
+let myName = "Mudit";
+
+let anotherName = myName; // copy of the value stored in myName is assigned to anotherName
+anotherName = "Advik"; // changing the value of anotherName does not affect myName
+
+console.log(myName); // Mudit
+console.log(anotherName); // Advik
+
+/*
+2. Heap Memory => used to store non-primitive data types (objects, arrays, functions). 
+When we use non-primitive data types, we get the reference to the memory location where 
+the original value is stored.
+*/
+
+let userOne = {
+    email: "userone@example.com",
+    upi: "userone@upi"
+}
+
+let userTwo = userOne; // reference to the memory location of userOne is assigned to userTwo
+userTwo.email = "usertwo@example.com"; // changing the email of userTwo also changes the email of userOne since they reference the same object in memory
+
+console.log(userOne.email); // usertwo@example.com
+console.log(userTwo.email); // usertwo@example.com
