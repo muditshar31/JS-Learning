@@ -13,8 +13,8 @@ const myArr2 = new Array(6, 12, 18, 24, 30, 36); // creates an array of length 6
 // myArr.unshift(9); // Adds the value at start of Array
 // myArr.shift(); // Removes the start value from the Array
 
-// console.log(myArr.includes(9));
-// console.log(myArr.indexOf(4));
+// console.log(myArr.includes(9)); // False
+// console.log(myArr.indexOf(4)); // 4
 
 const newArr = myArr.join()
 
