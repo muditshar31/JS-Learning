@@ -10,8 +10,8 @@ const myArr2 = new Array(6, 12, 18, 24, 30, 36); // creates an array of length 6
 // myArr.push(6); // adds 6 to the end of the array
 // myArr.push(7); // adds 7 to the end of the array
 // myArr.pop();
-// myArr.unshift(9);
-// myArr.shift(); 
+// myArr.unshift(9); // Adds the value at start of Array
+// myArr.shift(); // Removes the start value from the Array
 
 // console.log(myArr.includes(9));
 // console.log(myArr.indexOf(4));
