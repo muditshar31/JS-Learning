@@ -17,10 +17,10 @@ const regularUser = {
     }
 }
 
-console.log(regularUser.fullname)
-console.log(regularUser.fullname.userfullname)
-console.log(regularUser.fullname.userfullname.firstname)
-console.log(regularUser.fullname.userfullname.lastname)
+console.log(regularUser.fullname) // { userfullname: { firstname: 'Mudit', lastname: 'Sharma' } }
+console.log(regularUser.fullname.userfullname) // { firstname: 'Mudit', lastname: 'Sharma' }
+console.log(regularUser.fullname.userfullname.firstname) // Mudit
+console.log(regularUser.fullname.userfullname.lastname) // Sharma
 
 const obj1 = {1 : "a", 2 : "b"}
 const obj2 = {3 : "c", 4 : "d"}
@@ -35,7 +35,7 @@ to a target object */
 
 const obj4 = {...obj1, ...obj2, ...obj3}
 
-console.log(obj4)
+console.log(obj4) // { '1': 'a', '2': 'b', '3': 'c', '4': 'd', '5': 'e', '6': 'f' }
 
 const users = [
     {
@@ -52,11 +52,11 @@ const users = [
     }
 ]
 
-console.log(users[1].email)
+console.log(users[1].email) // user2@gmail.com
 
-console.log(tinderUser)
-console.log(Object.keys(tinderUser))
-console.log(Object.values(tinderUser))
-console.log(Object.entries(tinderUser))
+console.log(tinderUser) // { id: '123abc', name: 'sammy', isLoggedIn: false }
+console.log(Object.keys(tinderUser)) // [ 'id', 'name', 'isLoggedIn' ]
+console.log(Object.values(tinderUser)) // [ '123abc', 'sammy', false ]
+console.log(Object.entries(tinderUser)) // [ [ 'id', '123abc' ], [ 'name', 'sammy' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLogged'))
+console.log(tinderUser.hasOwnProperty('isLoggedIn')) // true
